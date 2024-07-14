@@ -5,11 +5,15 @@ import { Button } from "../../components/button";
 interface ConfirmTripModalProps {
   closeConfirmTripModal: () => void;
   createTrip: (event: FormEvent<HTMLFormElement>) => void;
+  setOwnerName: (name: string) => void;
+  setOwnerEmail: (email: string) => void;
 }
 
 export function ConfirmTripModal({
   closeConfirmTripModal,
   createTrip,
+  setOwnerEmail,
+  setOwnerName,
 }: ConfirmTripModalProps) {
   return (
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
@@ -46,6 +50,7 @@ export function ConfirmTripModal({
               name="name"
               placeholder="Digite o teu nome completo"
               className="bg-transparent placeholder-zinc-400 text-lg outline-none flex-1"
+              onChange={(event) => setOwnerName(event.target.value)}
             />
           </div>
           <div className="h-14 py-2.5 px-4 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center gap-2">
@@ -55,6 +60,7 @@ export function ConfirmTripModal({
               name="email"
               placeholder="Digite o teu e-mail pessoal"
               className="bg-transparent placeholder-zinc-400 text-lg outline-none flex-1"
+              onChange={(event) => setOwnerEmail(event.target.value)}
             />
           </div>
           <Button type="submit" variant="primary" size="full">
