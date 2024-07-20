@@ -11,7 +11,6 @@
  <a href="#-routes">Routes</a> | 
  <a href="#-setup">Setup</a> | 
  <a href="#-technologies">Technologies</a> | 
- <a href="#-license">License</a>
 </p>
 
 
