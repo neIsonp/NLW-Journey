@@ -305,10 +305,10 @@ Passo a passo para clonar e executar a aplicação na sua máquina:
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:pabloxt14/nlw-journey-node.git
+$ git clone https://github.com/neIsonp/NLW-Journey/
 
 # Acesse a pasta do projeto no terminal
-$ cd nlw-journey-node
+$ cd NLW-Journey/nlw-journey-node
 
 # Instale as dependências
 $ npm install
